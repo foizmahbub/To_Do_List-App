@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.room.Database
 import androidx.room.Room
 import com.example.to_dolist.databinding.FragmentAddnoteBinding
@@ -44,12 +45,13 @@ class AddNoteFragment : Fragment() {
             val dateStr=showDate ?:"00/00/0000"
             val note=Note(title = tittleStr, time = timeStr, date = dateStr)
             Database.getNoteDao().insertData(note)
+            findNavController().navigate(R.id.action_addnoteFragment_to_homeFragment)
         }
 
         return binding.root
     }
 
-    @SuppressLint("SuspiciousIndentation")
+
     private fun picATime() {
        val calender=Calendar.getInstance()
         val munite=calender.get(Calendar.MINUTE)
@@ -64,6 +66,8 @@ class AddNoteFragment : Fragment() {
 
     }
 
+
+    @SuppressLint("SuspiciousIndentation")
     private fun picADate() {
         val calender= Calendar.getInstance()
         val day = calender.get(Calendar.DAY_OF_MONTH)
