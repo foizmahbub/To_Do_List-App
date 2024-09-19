@@ -75,7 +75,7 @@ class AddNoteFragment : Fragment() {
         val year = calender.get(Calendar.YEAR)
 
      val showDatePicker = DatePickerDialog(requireActivity(),DatePickerDialog.OnDateSetListener{view,Year,month,dayOfMonth->
-             showDate="$year/$month/$day"
+             showDate="$year/${month+1}/$day"
           binding.dateBtn.text=showDate
 
       },year,month,day)
