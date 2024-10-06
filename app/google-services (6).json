@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332028733683",
+    "project_id": "projrctdb",
+    "storage_bucket": "projrctdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332028733683:android:e4aade12961be950b4ef86",
+        "android_client_info": {
+          "package_name": "com.example.to_dolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAr7v5XEYTc5GxqqjCYHE9AiA5ZIRsUtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

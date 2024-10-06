@@ -52,6 +52,7 @@ class AddNoteFragment : Fragment() {
     }
 
 
+    @SuppressLint("SuspiciousIndentation")
     private fun picATime() {
        val calender=Calendar.getInstance()
         val munite=calender.get(Calendar.MINUTE)
